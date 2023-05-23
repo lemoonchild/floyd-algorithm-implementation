@@ -1,0 +1,12 @@
+BuenosAires SaoPaulo 10 15 20 50
+BuenosAires Lima 15 20 30 70
+Lima Quito 10 12 15 20
+BuenosAires Santiago 24 20 10 12
+Yopal Santiago 25 23 23 12
+Montevideo Yopal 22 12 11 14
+Panama Guatemala 42 48 49 50
+Guatemala Mexico 48 12 42 51
+Salvador Guatemala 7 12 13 16
+WashingtonDC Guatemala 42 24 21 54
+Ottawa WashingtonDC 24 12 42 51
+Guatemala Ottawa 12 23 34 25
