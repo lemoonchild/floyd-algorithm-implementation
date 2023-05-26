@@ -9,7 +9,7 @@ public class RW_File {
     public static final String PATH = "C:\\Users\\n8nug\\IdeaProjects\\floyd-algorithm-implementation\\logistica.txt";
 
     public static String[] readFile(int opcion) throws IOException {
-        File doc = new File(PATH);
+        File doc = new File("C:\\Users\\n8nug\\IdeaProjects\\floyd-algorithm-implementation\\logistica.txt");
         BufferedReader obj = new BufferedReader(new FileReader(doc));
         ArrayList<String> linesList = new ArrayList<String>();
 
@@ -24,7 +24,7 @@ public class RW_File {
                 if (tokens.length >= 6) {
                     switch (opcion) {
                         case 1:
-                            numero = Integer.parseInt(tokens[2]);
+                            numero = Integer.valueOf(tokens[2]);
                             break;
                         case 2:
                             numero = Integer.parseInt(tokens[3]);
@@ -57,5 +57,25 @@ public class RW_File {
         return linesList.toArray(new String[linesList.size()]);
     }
 
+    /**
+     * Permite crear(si no existe) el archivo de almacenamiento y sobreescribir su contenido.
+     * @param text Contenido del archivo
+     * @throws IOException
+     */
+    public static void writeFile(String text) throws IOException {
+        File file = new File("C:\\Users\\n8nug\\IdeaProjects\\floyd-algorithm-implementation\\logistica.txt");
+        if (!file.exists()) {
+            file.createNewFile();
+        }
 
+        FileWriter fw = new FileWriter(file, true);
+
+        fw.write(text);
+        fw.close();
+    }
+
+    public static void deleteFile() {
+        File file = new File("C:\\Users\\n8nug\\IdeaProjects\\floyd-algorithm-implementation\\logistica.txt");
+        file.delete();
+    }
 }
