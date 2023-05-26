@@ -1,2 +1,2 @@
 # floyd-algorithm-implementation
-Integrantes: Xavier López, Madeline Castro 
+Hoja de Trabajo #10 - Algoritmos y Estructura de Datos, sección 10. Integrantes: Xavier López 22716, Madeline Castro 22473
